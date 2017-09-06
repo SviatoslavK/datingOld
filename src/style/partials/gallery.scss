@@ -1,0 +1,194 @@
+.gallery {
+    width: 100%;
+    height: auto;
+    background-color: #F0F0F0;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.gallery__choose {
+    height: 33px;
+    width: 411px;
+    display: flex;
+    border: 1px solid #366CF7;
+    border-radius: 5px;
+    margin-bottom: 27px;
+}
+.choose__item {
+    padding-top: 2px;
+    height: 100%;
+    width: 137px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: #366CF7;
+    letter-spacing: 0.8px;
+    &:hover {
+        cursor: pointer;
+    }
+    &[checking] {
+        background-color: #366CF7;
+        color: #fff;
+    }
+}
+.gallery__block {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+}
+.gallery__block--row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 27px;
+    &::last-child {
+        margin-bottom: 0;
+    }
+}
+.gallery__card {
+    width: 272px;
+    height: 343px;
+    box-shadow: (0px 1px 3px 0px rgba(0, 0, 0, .25));
+    background-color: #fff;
+    border-radius: 5px;
+    &:hover {
+        cursor: pointer;
+    }
+    &:hover .gallery__card--buttons {
+        display: flex;
+    }
+}
+.gallery__card--img {
+    @include square(273px);
+    padding-top: 20px;
+    position: relative;
+}
+.gallery__card--img11 {
+    @include background-img('../img/lg-photo1.png')
+}
+.gallery__card--img12 {
+    @include background-img('../img/lg-photo2.png')
+}
+.gallery__card--img13 {
+    @include background-img('../img/lg-photo3.png')
+}
+.gallery__card--img14 {
+    @include background-img('../img/lg-photo4.png')
+}
+.gallery__card--img21 {
+    @include background-img('../img/lg-photo5.png')
+}
+.gallery__card--img22 {
+    @include background-img('../img/lg-photo6.png')
+}
+.gallery__card--img23 {
+    @include background-img('../img/lg-photo7.png')
+}
+.gallery__card--img24 {
+    @include background-img('../img/lg-photo8.png')
+}
+.gallery__card--photos {
+    // width: 65px;
+    height: 33px;
+    background-color: rgba(0,0,0, .3);
+    border-radius: 5px;
+    margin-left: 14px;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 10px;
+}
+.card__photos--icon {
+    width: 21px;
+    height: 17px;
+    @include background-img('../img/camera-icon.svg');
+    margin-right: 6px;
+}
+.card__photos--quanity {
+    color: #fff;
+    font-size: 14px;
+    padding-top: 3px;
+}
+.gallery__card--top {
+    height: 33px;
+    width: 53px;
+    background-color: #FF1E6C;
+    border-radius: 5px;
+    display: inline-flex;
+    text-transform: uppercase;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    margin-right: 18px;
+}
+.gallery__card--buttons {
+    height: 43px;
+    width: 100%;
+    background: linear-gradient(45deg, #4E92FF, #376CF8);
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+.card__button--item {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+}
+.card__button--favorite {
+    border-right: 1px solid rgba(255,255,255, .3);
+}
+.button__favorite--icon {
+    width: 19px;
+    height: 18px;
+    @include background-img('../img/star.svg');
+    margin-left: 16px;
+    margin-right: 9px;
+}
+.button__write--icon {
+    width: 20px;
+    height: 15px;
+    @include background-img('../img/letter-icon.svg');
+    margin-left: 18px;
+    margin-right: 9px;
+}
+.gallery__card--title {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 13px;
+}
+.card__title--name {
+    color: #366CF7;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    line-height: 20px;
+}
+.card__title--location {
+    font-size: 14px;
+    margin-top: 3px;
+}
+.online {
+    display: inline-block;
+    border-radius: 50%;
+    @include square(13px);
+    float: right;
+    margin-right: 20px;
+}
+[online] .online {
+    background-color: #01F501;
+}
+.pagination__block {
+    height: 43px;
+    width: 313px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 47px;
+    margin-left: auto;
+    margin-right: auto;
+
+}

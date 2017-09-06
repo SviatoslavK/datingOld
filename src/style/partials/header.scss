@@ -1,2 +1,70 @@
-@import "_variables";
-@import "_utils";
+
+header {
+    width: 100%;
+    height: 80px;
+    & .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+.header__logo {
+    height: 26px;
+    width: 170px;
+    @include background-img('../img/logo.svg');
+    margin-right: 30px;
+}
+.header__navbar {
+    display: flex;
+    align-items: center;
+    // margin-right: 140px;
+}
+.navbar__item {
+    margin-right: 30px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+}
+.header__info {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.header__status {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    margin-right: 19px;
+}
+.header__status--text {
+    font-size: 14px;
+}
+.header__status--icon {
+    @include square(14px);
+    @include background-img('../img/info-icon.svg');
+    margin-left: 8px;
+    align-self: flex-start;
+    margin-top: 6px;
+    &:hover {
+        cursor:pointer;
+    }
+}
+.header__balance {
+    font-weight: 500;
+    font-size: 14px;
+    color: #366CF7;
+}
+.header__avatar {
+    margin-left: 18px;
+    margin-right: 14px;
+    @include square(43px);
+    @include background-img('../img/avatar.png');
+}
+.header__arrow {
+    width: 10px;
+    height: 6px;
+    @include background-img('../img/arrow-down.svg');
+    &:hover {
+        cursor: pointer;
+    }
+}

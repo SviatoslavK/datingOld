@@ -1,1 +1,1 @@
-console.log("rigger");
+function getVals(){var e=this.parentNode,n=e.getElementsByTagName("input"),t=parseFloat(n[0].value),a=parseFloat(n[1].value);if(e.querySelector(".first-range").innerHTML=t,e.querySelector(".second-range").innerHTML=t,t>a){var r=a;a=t,t=r}}console.log("rigger"),window.onload=function(){for(var e=document.getElementsByClassName("range-slider"),n=0;n<e.length;n++)for(var t=e[n].getElementsByTagName("input"),a=0;a<t.length;a++)"range"===t[a].type&&(t[a].oninput=getVals,t[a].oninput())};

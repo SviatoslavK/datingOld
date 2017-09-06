@@ -1,2 +1,23 @@
-@import "_variables";
-@import "_utils";
+footer {
+    width: 100%;
+    height: 150px;
+    padding-top: 30px;
+    color: #777777;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+}
+.footer__nav {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    margin-bottom: 14px;
+    letter-spacing: 0.7px;
+}
+.footer__nav--item {
+    font-size: 14px;
+    margin-right: 50px;
+}
+.footer__copyright,
+.footer__warning {
+    line-height: 20px;
+}

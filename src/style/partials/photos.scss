@@ -1,0 +1,40 @@
+.photos {
+    height: 183px;
+    width: 100%;
+    background-color: #F0F0F0;
+    & .container {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.photos__item {
+    @include square(143px);
+    background-color: #fff;
+    border-radius: 10px;
+}
+.photos__item--1 {
+    @include background-img('../img/sm-photo1.png')
+}
+.photos__item--2 {
+    @include background-img('../img/sm-photo2.png')
+}
+.photos__item--3 {
+    @include background-img('../img/sm-photo3.png')
+}
+.photos__item--4 {
+    @include background-img('../img/sm-photo4.png')
+}
+.photos__item--5 {
+    @include background-img('../img/sm-photo5.png')
+}
+.photos__item--6 {
+    @include background-img('../img/sm-photo6.png')
+}
+.photos__item--7 {
+    @include background-img('../img/sm-photo7.png')
+}
+.photos__item--8 {
+    @include background-img('../img/sm-photo8.png')
+}

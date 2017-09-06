@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Vector Smart Object copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect x="73" y="7" width="14" height="14" id="rect-1"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1087.000000, -34.000000)">
+            <g id="header" transform="translate(135.000000, 18.000000)">
+                <g id="status" transform="translate(879.000000, 9.000000)">
+                    <g id="Vector-Smart-Object-copy">
+                        <image x="73" y="7" width="14" height="14" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAQFJREFUKBWdUjsOglAQBLWxxcrCRA+hMWhtR8Mx1HgFwhWMegwaGg+gxM8hNLGwo7UycQYG8qKJQTcZdvYzPNh9tmXYYP7oIAwBD3BUSuFjIDitmjflLLsgEE3Bl4oT+L34CN4VX0C8Ic+EEq0RHwAfxTuLhaHeBo+AITCj2NbnXZA4A2Mkn/AW8ld6xF16xHW4HdAHejU8+E80npSJ8tDiqeXJqvmqhRRyEAkKZZOKE3iiNPXw/z0KOb1iEGUTyFYwc+TsdRrvWSNuGfyD8kTuiSOvauxNKeRyXY38q1g93GlMYaDuSCMvxEcQIjPVuEta8P8FyF+QLfj3K2eIK1/yF7a9YD3KKio/AAAAAElFTkSuQmCC"></image>
+                        <use fill-opacity="0" fill="#000000" fill-rule="evenodd" xlink:href="#rect-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

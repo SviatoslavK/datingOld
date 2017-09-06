@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Vector Smart Object1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect x="1499" y="89" width="12" height="12" id="rect-1"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-663.000000, -383.000000)">
+            <g id="search_var_1" transform="translate(-836.000000, 294.000000)">
+                <g id="Vector-Smart-Object1">
+                    <image x="1499" y="89" width="12" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAMJJREFUKBWVkb0NwjAQRm2oWCYlLRY0ibIK47BKFBrQ0VJmCFagQuJ9lmUcEwpOevH9fOezHb89Ph/OuQn6+2nzYv0yNGuSAzQrPhLvYUwF3I+l3EhGmkkNPRgEmDUVYtUMes/HLRQ65THtHMCg05FjA0HddFMO24FBFLO63KAgTTrjHhRjF2jLx9Ad/rI8obrHzyPFCZXYGNkm5AfIr+cXxPmCSzVN0B/ULgZZjO/SZfXEBgEGNTRwhZmYOFrRJE3zBpTeU2RirQ5QAAAAAElFTkSuQmCC"></image>
+                    <use fill-opacity="0" fill="#000000" fill-rule="evenodd" xlink:href="#rect-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
