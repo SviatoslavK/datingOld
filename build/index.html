@@ -33,39 +33,48 @@
         </header>
         <div class="photos">
             <div class="container">
-                <div class="photos__item photos__item--1"></div>
-                <div class="photos__item photos__item--2"></div>
-                <div class="photos__item photos__item--3"></div>
-                <div class="photos__item photos__item--4"></div>
-                <div class="photos__item photos__item--5"></div>
-                <div class="photos__item photos__item--6"></div>
-                <div class="photos__item photos__item--7"></div>
-                <div class="photos__item photos__item--8"></div>
+                <div class="group__photos">
+                    <div class="photos__item photos__item--1"></div>
+                    <div class="photos__item photos__item--2"></div>
+                    <div class="photos__item photos__item--3"></div>
+                    <div class="photos__item photos__item--4"></div>
+                </div>
+                <div class="group__photos">
+                    <div class="photos__item photos__item--5"></div>
+                    <div class="photos__item photos__item--6"></div>
+                    <div class="photos__item photos__item--7"></div>
+                    <div class="photos__item photos__item--8"></div>
+                </div>
             </div>
         </div>
         <div class="filters">
             <div class="container">
                 <h1 class="filters__title">Я ищу</h1>
                 <div class="filter__block">
-                    <select name="" id="filters__select">
+                    <div class="group__filter">
+        
+                        <select name="" id="filters__select">
                         <option>Девушку</option>
                     </select>
-                    <lable class="filters__text--block">
-                        <input type="text" name="" id="filters__text" placeholder="Санкт-Петербург">
-                        <div class="input__clear"></div>
-                    </lable>
-                    <div class="filters__range">
-                        <div class="filters__range--title">Возраст</div>
-                        <!--<input type="range" name="" id="filters__range" multiple>-->
-                        <section class="range-slider">
-                            <!--<span class="rangeValues"></span>-->
-                            <input value="18" min="18" max="59" step="1" type="range" id="first-range">
-                            <output for="first-range" class="first-range"></output>
-                            <input value="27" min="19" max="60" step="1" type="range" id="second-range">
-                            <output for="second-range" class="second-range"></output>
-                        </section>
+                        <lable class="filters__text--block">
+                            <input type="text" name="" id="filters__text" placeholder="Санкт-Петербург">
+                            <div class="input__clear"></div>
+                        </lable>
                     </div>
-                    <button class="filters__btn">найти</button>
+                    <div class="group__filter">
+                        <div class="filters__range">
+                            <div class="filters__range--title">Возраст</div>
+                            <!--<input type="range" name="" id="filters__range" multiple>-->
+                            <section class="range-slider">
+                                <!--<span class="rangeValues"></span>-->
+                                <input value="18" min="18" max="59" step="1" type="range" id="first-range">
+                                <output for="first-range" class="first-range"></output>
+                                <input value="27" min="19" max="60" step="1" type="range" id="second-range">
+                                <output for="second-range" class="second-range"></output>
+                            </section>
+                        </div>
+                        <button class="filters__btn">найти</button>
+                    </div>
                 </div>
                 <div class="filters__extended">
                     <div class="extended__text">Расширенный поиск</div>
@@ -77,191 +86,202 @@
         <div class="gallery">
             <div class="container">
                 <div class="gallery__choose">
-                    <div class="choose__item" >Онлайн</div>
+                    <div class="choose__item">Онлайн</div>
                     <div class="choose__item" checking>Новые</div>
                     <div class="choose__item">Популярные</div>
                 </div>
                 <div class="gallery__block">
                     <div class="gallery__block--row">
-                        <div class="gallery__card" online>
-                            <div class="gallery__card--img gallery__card--img11">
-                                <div class="gallery__card--photos">
-                                    <div class="card__photos--icon"></div>
-                                    <div class="card__photos--quanity">12</div>
+                        <div class="group">
+        
+                            <div class="gallery__card" online>
+                                <div class="gallery__card--img gallery__card--img11">
+                                    <div class="gallery__card--photos">
+                                        <div class="card__photos--icon"></div>
+                                        <div class="card__photos--quanity">12</div>
+                                    </div>
+                                    <div class="gallery__card--top">топ</div>
+                                    <div class="gallery__card--buttons">
+                                        <div class="card__button--item card__button--favorite">
+                                            <div class="button__favorite--icon"></div>
+                                            <div class="button__favorite--text">Избранное</div>
+                                        </div>
+                                        <div class="card__button--item card__button--write">
+                                            <div class="button__write--icon"></div>
+                                            <div class="button__write--text">Написать</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="gallery__card--top">топ</div>
-                                <div class="gallery__card--buttons">
-                                    <div class="card__button--item card__button--favorite">
-                                        <div class="button__favorite--icon"></div>
-                                        <div class="button__favorite--text">Избранное</div>
-                                    </div>
-                                    <div class="card__button--item card__button--write">
-                                        <div class="button__write--icon"></div>
-                                        <div class="button__write--text">Написать</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery__card--title">
-                                <div class="card__title--name">Кристиночка, 28 <span class="online"></span></div>
-                                <div class="card__title--location">Санкт-Петербург, Россия</div>
-                            </div>
-                        </div>
-                        <div class="gallery__card" online>
-                            <div class="gallery__card--img gallery__card--img12">
-                                <div class="gallery__card--photos">
-                                    <div class="card__photos--icon"></div>
-                                    <div class="card__photos--quanity">3</div>
-                                </div>
-                                <div class="gallery__card--top">топ</div>
-                                <div class="gallery__card--buttons">
-                                    <div class="card__button--item card__button--favorite">
-                                        <div class="button__favorite--icon"></div>
-                                        <div class="button__favorite--text">Избранное</div>
-                                    </div>
-                                    <div class="card__button--item card__button--write">
-                                        <div class="button__write--icon"></div>
-                                        <div class="button__write--text">Написать</div>
-                                    </div>
+                                <div class="gallery__card--title">
+                                    <div class="card__title--name">Кристиночка, 28 <span class="online"></span></div>
+                                    <div class="card__title--location">Санкт-Петербург, Россия</div>
                                 </div>
                             </div>
-                            <div class="gallery__card--title">
-                                <div class="card__title--name">Диана, 20 <span class="online"></span></div>
-                                <div class="card__title--location">Самара, Россия</div>
-                            </div>
-                        </div>
-                        <div class="gallery__card" online>
-                            <div class="gallery__card--img gallery__card--img13">
-                                <div class="gallery__card--photos">
-                                    <div class="card__photos--icon"></div>
-                                    <div class="card__photos--quanity">145</div>
-                                </div>
-                                <div class="gallery__card--top">топ</div>
-                                <div class="gallery__card--buttons">
-                                    <div class="card__button--item card__button--favorite">
-                                        <div class="button__favorite--icon"></div>
-                                        <div class="button__favorite--text">Избранное</div>
+                            <div class="gallery__card" online>
+                                <div class="gallery__card--img gallery__card--img12">
+                                    <div class="gallery__card--photos">
+                                        <div class="card__photos--icon"></div>
+                                        <div class="card__photos--quanity">3</div>
                                     </div>
-                                    <div class="card__button--item card__button--write">
-                                        <div class="button__write--icon"></div>
-                                        <div class="button__write--text">Написать</div>
+                                    <div class="gallery__card--top">топ</div>
+                                    <div class="gallery__card--buttons">
+                                        <div class="card__button--item card__button--favorite">
+                                            <div class="button__favorite--icon"></div>
+                                            <div class="button__favorite--text">Избранное</div>
+                                        </div>
+                                        <div class="card__button--item card__button--write">
+                                            <div class="button__write--icon"></div>
+                                            <div class="button__write--text">Написать</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="gallery__card--title">
-                                <div class="card__title--name">Аня, 18 <span class="online"></span></div>
-                                <div class="card__title--location">Ростов-на-Дону, Россия</div>
+                                <div class="gallery__card--title">
+                                    <div class="card__title--name">Диана, 20 <span class="online"></span></div>
+                                    <div class="card__title--location">Самара, Россия</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="gallery__card">
-                            <div class="gallery__card--img gallery__card--img14">
-                                <div class="gallery__card--photos">
-                                    <div class="card__photos--icon"></div>
-                                    <div class="card__photos--quanity">17</div>
+                        <div class="group">
+                            <div class="gallery__card" online>
+                                <div class="gallery__card--img gallery__card--img13">
+                                    <div class="gallery__card--photos">
+                                        <div class="card__photos--icon"></div>
+                                        <div class="card__photos--quanity">145</div>
+                                    </div>
+                                    <div class="gallery__card--top">топ</div>
+                                    <div class="gallery__card--buttons">
+                                        <div class="card__button--item card__button--favorite">
+                                            <div class="button__favorite--icon"></div>
+                                            <div class="button__favorite--text">Избранное</div>
+                                        </div>
+                                        <div class="card__button--item card__button--write">
+                                            <div class="button__write--icon"></div>
+                                            <div class="button__write--text">Написать</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="gallery__card--buttons">
-                                    <div class="card__button--item card__button--favorite">
-                                        <div class="button__favorite--icon"></div>
-                                        <div class="button__favorite--text">Избранное</div>
-                                    </div>
-                                    <div class="card__button--item card__button--write">
-                                        <div class="button__write--icon"></div>
-                                        <div class="button__write--text">Написать</div>
-                                    </div>
+                                <div class="gallery__card--title">
+                                    <div class="card__title--name">Аня, 18 <span class="online"></span></div>
+                                    <div class="card__title--location">Ростов-на-Дону, Россия</div>
                                 </div>
                             </div>
-                            <div class="gallery__card--title">
-                                <div class="card__title--name">Анжелика, 27 <span class="online"></span></div>
-                                <div class="card__title--location">Чебоксары, Россия</div>
+                            <div class="gallery__card">
+                                <div class="gallery__card--img gallery__card--img14">
+                                    <div class="gallery__card--photos">
+                                        <div class="card__photos--icon"></div>
+                                        <div class="card__photos--quanity">17</div>
+                                    </div>
+                                    <div class="gallery__card--buttons">
+                                        <div class="card__button--item card__button--favorite">
+                                            <div class="button__favorite--icon"></div>
+                                            <div class="button__favorite--text">Избранное</div>
+                                        </div>
+                                        <div class="card__button--item card__button--write">
+                                            <div class="button__write--icon"></div>
+                                            <div class="button__write--text">Написать</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__card--title">
+                                    <div class="card__title--name">Анжелика, 27 <span class="online"></span></div>
+                                    <div class="card__title--location">Чебоксары, Россия</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="gallery__block--row">
-                        <div class="gallery__card" online>
-                            <div class="gallery__card--img gallery__card--img21">
-                                <div class="gallery__card--photos">
-                                    <div class="card__photos--icon"></div>
-                                    <div class="card__photos--quanity">12</div>
+                        <div class="group">
+        
+                            <div class="gallery__card" online>
+                                <div class="gallery__card--img gallery__card--img21">
+                                    <div class="gallery__card--photos">
+                                        <div class="card__photos--icon"></div>
+                                        <div class="card__photos--quanity">12</div>
+                                    </div>
+                                    <div class="gallery__card--buttons">
+                                        <div class="card__button--item card__button--favorite">
+                                            <div class="button__favorite--icon"></div>
+                                            <div class="button__favorite--text">Избранное</div>
+                                        </div>
+                                        <div class="card__button--item card__button--write">
+                                            <div class="button__write--icon"></div>
+                                            <div class="button__write--text">Написать</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="gallery__card--buttons">
-                                    <div class="card__button--item card__button--favorite">
-                                        <div class="button__favorite--icon"></div>
-                                        <div class="button__favorite--text">Избранное</div>
-                                    </div>
-                                    <div class="card__button--item card__button--write">
-                                        <div class="button__write--icon"></div>
-                                        <div class="button__write--text">Написать</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery__card--title">
-                                <div class="card__title--name">Лариса, 32 <span class="online"></span></div>
-                                <div class="card__title--location">Москва, Россия</div>
-                            </div>
-                        </div>
-                        <div class="gallery__card">
-                            <div class="gallery__card--img gallery__card--img22">
-                                <div class="gallery__card--photos">
-                                    <div class="card__photos--icon"></div>
-                                    <div class="card__photos--quanity">3</div>
-                                </div>
-                                <div class="gallery__card--buttons">
-                                    <div class="card__button--item card__button--favorite">
-                                        <div class="button__favorite--icon"></div>
-                                        <div class="button__favorite--text">Избранное</div>
-                                    </div>
-                                    <div class="card__button--item card__button--write">
-                                        <div class="button__write--icon"></div>
-                                        <div class="button__write--text">Написать</div>
-                                    </div>
+                                <div class="gallery__card--title">
+                                    <div class="card__title--name">Лариса, 32 <span class="online"></span></div>
+                                    <div class="card__title--location">Москва, Россия</div>
                                 </div>
                             </div>
-                            <div class="gallery__card--title">
-                                <div class="card__title--name">Настя, 21 <span class="online"></span></div>
-                                <div class="card__title--location">Зеленоград, Россия</div>
-                            </div>
-                        </div>
-                        <div class="gallery__card">
-                            <div class="gallery__card--img gallery__card--img23">
-                                <div class="gallery__card--photos">
-                                    <div class="card__photos--icon"></div>
-                                    <div class="card__photos--quanity">4</div>
-                                </div>
-                                <div class="gallery__card--buttons">
-                                    <div class="card__button--item card__button--favorite">
-                                        <div class="button__favorite--icon"></div>
-                                        <div class="button__favorite--text">Избранное</div>
+                            <div class="gallery__card">
+                                <div class="gallery__card--img gallery__card--img22">
+                                    <div class="gallery__card--photos">
+                                        <div class="card__photos--icon"></div>
+                                        <div class="card__photos--quanity">3</div>
                                     </div>
-                                    <div class="card__button--item card__button--write">
-                                        <div class="button__write--icon"></div>
-                                        <div class="button__write--text">Написать</div>
+                                    <div class="gallery__card--buttons">
+                                        <div class="card__button--item card__button--favorite">
+                                            <div class="button__favorite--icon"></div>
+                                            <div class="button__favorite--text">Избранное</div>
+                                        </div>
+                                        <div class="card__button--item card__button--write">
+                                            <div class="button__write--icon"></div>
+                                            <div class="button__write--text">Написать</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="gallery__card--title">
-                                <div class="card__title--name">Евгения, 30 <span class="online"></span></div>
-                                <div class="card__title--location">Ростов-на-Дону, Россия</div>
+                                <div class="gallery__card--title">
+                                    <div class="card__title--name">Настя, 21 <span class="online"></span></div>
+                                    <div class="card__title--location">Зеленоград, Россия</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="gallery__card">
-                            <div class="gallery__card--img gallery__card--img24">
-                                <div class="gallery__card--photos">
-                                    <div class="card__photos--icon"></div>
-                                    <div class="card__photos--quanity">28</div>
+                        <div class="group">
+        
+                            <div class="gallery__card">
+                                <div class="gallery__card--img gallery__card--img23">
+                                    <div class="gallery__card--photos">
+                                        <div class="card__photos--icon"></div>
+                                        <div class="card__photos--quanity">4</div>
+                                    </div>
+                                    <div class="gallery__card--buttons">
+                                        <div class="card__button--item card__button--favorite">
+                                            <div class="button__favorite--icon"></div>
+                                            <div class="button__favorite--text">Избранное</div>
+                                        </div>
+                                        <div class="card__button--item card__button--write">
+                                            <div class="button__write--icon"></div>
+                                            <div class="button__write--text">Написать</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="gallery__card--buttons">
-                                    <div class="card__button--item card__button--favorite">
-                                        <div class="button__favorite--icon"></div>
-                                        <div class="button__favorite--text">Избранное</div>
-                                    </div>
-                                    <div class="card__button--item card__button--write">
-                                        <div class="button__write--icon"></div>
-                                        <div class="button__write--text">Написать</div>
-                                    </div>
+                                <div class="gallery__card--title">
+                                    <div class="card__title--name">Евгения, 30 <span class="online"></span></div>
+                                    <div class="card__title--location">Ростов-на-Дону, Россия</div>
                                 </div>
                             </div>
-                            <div class="gallery__card--title">
-                                <div class="card__title--name">Ольга, 25 <span class="online"></span></div>
-                                <div class="card__title--location">Казань, Россия</div>
+                            <div class="gallery__card">
+                                <div class="gallery__card--img gallery__card--img24">
+                                    <div class="gallery__card--photos">
+                                        <div class="card__photos--icon"></div>
+                                        <div class="card__photos--quanity">28</div>
+                                    </div>
+                                    <div class="gallery__card--buttons">
+                                        <div class="card__button--item card__button--favorite">
+                                            <div class="button__favorite--icon"></div>
+                                            <div class="button__favorite--text">Избранное</div>
+                                        </div>
+                                        <div class="card__button--item card__button--write">
+                                            <div class="button__write--icon"></div>
+                                            <div class="button__write--text">Написать</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__card--title">
+                                    <div class="card__title--name">Ольга, 25 <span class="online"></span></div>
+                                    <div class="card__title--location">Казань, Россия</div>
+                                </div>
                             </div>
                         </div>
                     </div>

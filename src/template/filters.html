@@ -2,25 +2,30 @@
     <div class="container">
         <h1 class="filters__title">Я ищу</h1>
         <div class="filter__block">
-            <select name="" id="filters__select">
+            <div class="group__filter">
+
+                <select name="" id="filters__select">
                 <option>Девушку</option>
             </select>
-            <lable class="filters__text--block">
-                <input type="text" name="" id="filters__text" placeholder="Санкт-Петербург">
-                <div class="input__clear"></div>
-            </lable>
-            <div class="filters__range">
-                <div class="filters__range--title">Возраст</div>
-                <!--<input type="range" name="" id="filters__range" multiple>-->
-                <section class="range-slider">
-                    <!--<span class="rangeValues"></span>-->
-                    <input value="18" min="18" max="59" step="1" type="range" id="first-range">
-                    <output for="first-range" class="first-range"></output>
-                    <input value="27" min="19" max="60" step="1" type="range" id="second-range">
-                    <output for="second-range" class="second-range"></output>
-                </section>
+                <lable class="filters__text--block">
+                    <input type="text" name="" id="filters__text" placeholder="Санкт-Петербург">
+                    <div class="input__clear"></div>
+                </lable>
             </div>
-            <button class="filters__btn">найти</button>
+            <div class="group__filter">
+                <div class="filters__range">
+                    <div class="filters__range--title">Возраст</div>
+                    <!--<input type="range" name="" id="filters__range" multiple>-->
+                    <section class="range-slider">
+                        <!--<span class="rangeValues"></span>-->
+                        <input value="18" min="18" max="59" step="1" type="range" id="first-range">
+                        <output for="first-range" class="first-range"></output>
+                        <input value="27" min="19" max="60" step="1" type="range" id="second-range">
+                        <output for="second-range" class="second-range"></output>
+                    </section>
+                </div>
+                <button class="filters__btn">найти</button>
+            </div>
         </div>
         <div class="filters__extended">
             <div class="extended__text">Расширенный поиск</div>

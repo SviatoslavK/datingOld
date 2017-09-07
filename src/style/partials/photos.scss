@@ -2,17 +2,64 @@
     height: 183px;
     width: 100%;
     background-color: #F0F0F0;
+    @include respond-to(desktop) {
+        height: 153px;
+    }
+    @include respond-to(tablet) {
+        height: 123px;
+    }
+    @include respond-to(mobile) {
+        height: 85px;
+    }
+    @include respond-to(small) {
+        height: 179px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
     & .container {
         display: flex;
         height: 100%;
         align-items: center;
         justify-content: space-between;
+        @include respond-to(small) {
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+}
+.group__photos {
+    display: flex;
+    width: 49.8%;
+    justify-content: space-between;
+    @include respond-to(desktop) {
+        width: 49.6%;
+    }
+    @include respond-to(tablet) {
+        width: 49.5%;
+    }
+    @include respond-to(mobile) {
+        width: 49.6%;
+    }
+    @include respond-to(small) {
+        width: 100%;
     }
 }
 .photos__item {
     @include square(143px);
     background-color: #fff;
     border-radius: 10px;
+    @include respond-to(desktop) {
+        @include square(113px);
+    }
+    @include respond-to(tablet) {
+        @include square(85px);
+    }
+    @include respond-to(mobile) {
+        @include square(55px);
+    }
+    @include respond-to(small) {
+        @include square(73px);
+    }
 }
 .photos__item--1 {
     @include background-img('../img/sm-photo1.png')

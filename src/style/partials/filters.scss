@@ -5,6 +5,15 @@
     & .container {
         height: 100%;
     }
+    @include respond-to(tablet) {
+        height: 230px;
+    }
+    @include respond-to(mobile) {
+        height: 297px;
+    }
+    @include respond-to(small) {
+        height: 396px;
+    }
 }
 .filters__title {
     padding-top: 33px;
@@ -12,6 +21,18 @@
     color: #333333;
     font-size: 30px;
     margin-bottom: 37px;
+    @include respond-to(tablet) {
+        font-size: 24px;
+        padding-top: 23px;
+    }
+    @include respond-to(mobile) {
+        font-size: 24px;
+        padding-top: 23px;
+    }
+    @include respond-to(small) {
+        font-size: 24px;
+        padding-top: 23px;
+    }
 }
 .filter__block {
     display: flex;
@@ -20,6 +41,33 @@
     font-size: 16px;
     letter-spacing: 0.8px;
     color: #333333;
+    @include respond-to(tablet) {
+        font-size: 14px;
+    }
+    @include respond-to(mobile) {
+        flex-direction: column;
+        font-size: 14px;
+    }
+    @include respond-to(small) {
+        flex-direction: column;
+        font-size: 14px;
+    }
+}
+.group__filter {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    @include respond-to(mobile) {
+        width: 100%;
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    @include respond-to(small) {
+        width: 100%;
+        flex-direction: column;
+    }
 }
 #filters__select {
     min-width: 173px;
@@ -27,10 +75,19 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-        height: 30px;
+    height: 30px;
     border-bottom: 1px solid #DCDCDC;
     border-radius: 0;
     background: url('../img/arrow-down.svg') 95%/13px no-repeat #fff;
+    @include respond-to(tablet) {
+        min-width: 113px;
+        width: 113px;
+    }
+    @include respond-to(small) {
+        width: 100%;
+        margin-bottom: 25px;
+        background: url('../img/arrow-down.svg') 100%/13px no-repeat #fff;
+    }
 }
 #filters__text {
     min-width: 273px;
@@ -38,9 +95,22 @@
     height: 30px;
     border-bottom: 1px solid #DCDCDC;
     padding-right: 20px;
+    @include respond-to(tablet) {
+        min-width: 213px;
+        width: 213px;
+    }
+    @include respond-to(small) {
+        width: 100%;
+        margin-bottom: 25px;
+    }
 }
 .filters__text--block {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    @include respond-to(small) {
+        width: 100%;
+    }
 }
 .input__clear {
     @include square(12px);
@@ -52,11 +122,26 @@
     &:hover {
         cursor: pointer;
     }
+    @include respond-to(small) {
+        margin-top: -12px;
+    }
 }
 .filters__range {
     display: flex;
     width: 260px;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    @include respond-to(tablet) {
+        width: 220px;
+    }
+    @include respond-to(mobile) {
+        margin: 0;
+    }
+    @include respond-to(small) {
+        width: 100%;
+        margin-bottom: 45px;
+    }
 }
 #filters__range {
     margin-left: 15px;
@@ -73,6 +158,18 @@
     color: #fff;
     font-size: 14px;
     letter-spacing: 2.8px;
+    @include respond-to(tablet) {
+        min-width: 133px;
+        width: 133px;
+        height: 43px;
+    }
+    @include respond-to(mobile) {
+        height: 40px;
+    }
+    @include respond-to(small) {
+        height: 40px;
+        width: 100%;
+    }
 }
 .filters__extended {
     margin-top: 56px;
@@ -107,22 +204,28 @@
 
 
 section.range-slider {
-  position: relative;
-  width: 182px;
-//   height: 30px;
-  float: left;
+    position: relative;
+    width: 182px;
+    //   height: 30px;
+    float: left;
 }
 section.range-slider input[type="range"] {
-  pointer-events: none;
-  position: absolute;
-  -webkit-appearance: none;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  border: none;
-  background: #F1EFEF;
-  left: 20px;
-  top: 3px;
-  width: 182px;
-  height: 1px;
+    pointer-events: none;
+    position: absolute;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    border: none;
+    background: #F1EFEF;
+    left: 20px;
+    top: 3px;
+    width: 182px;
+    height: 1px;
+    @include respond-to(tablet) {
+        width: 142px;
+    }
+    @include respond-to(small) {
+        width: 232px;
+    }
 }
 section.range-slider input[type="range"]::-webkit-slider-thumb {
     pointer-events: all;

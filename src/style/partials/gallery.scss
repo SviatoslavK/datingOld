@@ -12,6 +12,22 @@
     border: 1px solid #366CF7;
     border-radius: 5px;
     margin-bottom: 27px;
+    @include respond-to(tablet) {
+        height: 25px;
+        width: 312px;
+        margin-bottom: 20px;
+        margin-left: 37px;
+    }
+    @include respond-to(mobile) {
+        height: 25px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    @include respond-to(small) {
+        height: 25px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 .choose__item {
     padding-top: 2px;
@@ -31,6 +47,20 @@
         background-color: #366CF7;
         color: #fff;
     }
+    @include respond-to(tablet) {
+        padding-top: 1px;
+        font-size: 12px;
+    }
+    @include respond-to(mobile) {
+        padding-top: 1px;
+        font-size: 12px;
+        width: 33.3%;
+    }
+    @include respond-to(small) {
+        padding-top: 1px;
+        font-size: 12px;
+        width: 33.3%;
+    }
 }
 .gallery__block {
     display: flex;
@@ -41,8 +71,47 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 27px;
-    &::last-child {
+    &:last-child {
         margin-bottom: 0;
+    }
+    @include respond-to(tablet) {
+        flex-direction: column;
+    }
+    @include respond-to(mobile) {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    @include respond-to(small) {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+.group {
+    display: flex;
+    justify-content: space-between;
+    width: 574px;
+    @include respond-to(desktop) {
+        width: 474px;
+    }
+    @include respond-to(tablet) {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 27px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    @include respond-to(mobile) {
+        width: 100%;
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    @include respond-to(small) {
+        width: 100%;
+        margin-bottom: 0px;
+        flex-direction: column;
     }
 }
 .gallery__card {
@@ -57,11 +126,40 @@
     &:hover .gallery__card--buttons {
         display: flex;
     }
+    @include respond-to(desktop) {
+        width: 232px;
+        height: 303px;
+    }
+    @include respond-to(tablet) {
+        width: 312px;
+        height: 383px;
+    }
+    @include respond-to(mobile) {
+        width: 225px;
+        height: 296px;
+    }
+    @include respond-to(small) {
+        width: 310px;
+        height: 381px;
+        margin-bottom: 10px;
+    }
 }
 .gallery__card--img {
-    @include square(273px);
+    @include square(272px);
     padding-top: 20px;
     position: relative;
+    @include respond-to(desktop) {
+        @include square(232px);
+    }
+    @include respond-to(tablet) {
+        @include square(312px);
+    }
+    @include respond-to(mobile) {
+        @include square(225px);
+    }
+    @include respond-to(small) {
+        @include square(310px);
+    }
 }
 .gallery__card--img11 {
     @include background-img('../img/lg-photo1.png')
@@ -97,17 +195,30 @@
     align-items: center;
     padding-left: 12px;
     padding-right: 10px;
+    @include respond-to(mobile) {
+        height: 26px;
+        margin-left: 10px;
+        padding-right: 10px;
+    }
 }
 .card__photos--icon {
     width: 21px;
     height: 17px;
     @include background-img('../img/camera-icon.svg');
     margin-right: 6px;
+    @include respond-to(mobile) {
+        width: 17px;
+        height: 14px;
+    }
 }
 .card__photos--quanity {
     color: #fff;
     font-size: 14px;
     padding-top: 3px;
+    @include respond-to(mobile) {
+        font-size: 12px;
+        padding-top: 2px;
+    }
 }
 .gallery__card--top {
     height: 33px;
@@ -121,6 +232,12 @@
     justify-content: center;
     float: right;
     margin-right: 18px;
+    @include respond-to(mobile) {
+        height: 26px;
+        margin-right: 10px;
+        width: 43px;
+        font-size: 14px;
+    }
 }
 .gallery__card--buttons {
     height: 43px;
@@ -129,6 +246,15 @@
     position: absolute;
     bottom: 0;
     display: none;
+    @include respond-to(tablet) {
+        display: flex;
+    }
+    @include respond-to(mobile) {
+        display: flex;
+    }
+    @include respond-to(small) {
+        display: flex;
+    }
 }
 .card__button--item {
     height: 100%;
@@ -137,6 +263,9 @@
     align-items: center;
     color: #fff;
     font-size: 14px;
+    @include respond-to(mobile) {
+        font-size: 12px;
+    }
 }
 .card__button--favorite {
     border-right: 1px solid rgba(255,255,255, .3);
@@ -147,6 +276,12 @@
     @include background-img('../img/star.svg');
     margin-left: 16px;
     margin-right: 9px;
+    @include respond-to(desktop) {
+        margin-left: 10px;
+    }
+    @include respond-to(mobile) {
+        margin-left: 13px;
+    }
 }
 .button__write--icon {
     width: 20px;
@@ -154,6 +289,12 @@
     @include background-img('../img/letter-icon.svg');
     margin-left: 18px;
     margin-right: 9px;
+    @include respond-to(desktop) {
+        margin-left: 10px;
+    }
+    @include respond-to(mobile) {
+        margin-left: 13px;
+    }
 }
 .gallery__card--title {
     display: flex;
@@ -167,10 +308,16 @@
     font-size: 18px;
     letter-spacing: 0.9px;
     line-height: 20px;
+    @include respond-to(mobile) {
+        font-size: 16px;
+    }
 }
 .card__title--location {
     font-size: 14px;
     margin-top: 3px;
+    @include respond-to(mobile) {
+        font-size: 12px;
+    }
 }
 .online {
     display: inline-block;
@@ -178,6 +325,9 @@
     @include square(13px);
     float: right;
     margin-right: 20px;
+    @include respond-to(mobile) {
+        @include square(11px);
+    }
 }
 [online] .online {
     background-color: #01F501;
@@ -190,5 +340,8 @@
     margin-top: 47px;
     margin-left: auto;
     margin-right: auto;
+    @include respond-to(small) {
+        width: 100%;
+    }
 
 }
