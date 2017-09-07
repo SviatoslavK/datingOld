@@ -78,7 +78,7 @@
     height: 30px;
     border-bottom: 1px solid #DCDCDC;
     border-radius: 0;
-    background: url('../img/arrow-down.svg') 95%/13px no-repeat #fff;
+    background: url('../img/arrow-down.png') 95%/10px no-repeat #fff;
     @include respond-to(tablet) {
         min-width: 113px;
         width: 113px;
@@ -86,7 +86,7 @@
     @include respond-to(small) {
         width: 100%;
         margin-bottom: 25px;
-        background: url('../img/arrow-down.svg') 100%/13px no-repeat #fff;
+        background: url('../img/arrow-down.png') 100%/10px no-repeat #fff;
     }
 }
 #filters__text {
@@ -123,7 +123,7 @@
         cursor: pointer;
     }
     @include respond-to(small) {
-        margin-top: -12px;
+        margin-top: -16px;
     }
 }
 .filters__range {
@@ -151,24 +151,30 @@
     width: 173px;
     height: 53px;
     background: linear-gradient(45deg, #4E92FF, #376CF8);
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     text-transform: uppercase;
     border-radius: 5px;
     color: #fff;
     font-size: 14px;
     letter-spacing: 2.8px;
+    // text-align: center;
+    line-height: 53px;
+    text-align: center;
     @include respond-to(tablet) {
         min-width: 133px;
         width: 133px;
         height: 43px;
+        line-height: 43px;
     }
     @include respond-to(mobile) {
         height: 40px;
+        line-height: 40px;
     }
     @include respond-to(small) {
         height: 40px;
         width: 100%;
+        line-height: 40px;
     }
 }
 .filters__extended {
@@ -188,7 +194,7 @@
 .extended__arrow {
     width: 10px;
     height: 6px;
-    @include background-img('../img/arrow-down.svg');
+    @include background-img('../img/arrow-down.png');
     &:hover {
         cursor: pointer;
     }
