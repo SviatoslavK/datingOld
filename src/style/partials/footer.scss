@@ -32,6 +32,9 @@ footer {
         line-height: 20px;
     }
 }
+.footer__nav--link:hover {
+    cursor: pointer;
+}
 .footer__copyright,
 .footer__warning {
     line-height: 20px;

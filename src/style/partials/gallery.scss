@@ -62,59 +62,14 @@
         width: 33.3%;
     }
 }
+.choose__item--item2 {
+    border-left: 1px solid #366CF7;
+    border-right: 1px solid #366CF7;
+}
 .gallery__block {
     display: flex;
-    // flex-direction: column;
     flex-wrap: wrap;
-    // justify-content: space-between;
 }
-// .gallery__block--row {
-//     display: flex;
-//     justify-content: space-between;
-//     margin-bottom: 27px;
-//     &:last-child {
-//         margin-bottom: 0;
-//     }
-//     @include respond-to(tablet) {
-//         flex-direction: column;
-//     }
-//     @include respond-to(mobile) {
-//         flex-direction: column;
-//         margin-bottom: 10px;
-//     }
-//     @include respond-to(small) {
-//         flex-direction: column;
-//         margin-bottom: 10px;
-//     }
-// }
-// .group {
-//     display: flex;
-//     justify-content: space-between;
-//     width: 574px;
-//     @include respond-to(desktop) {
-//         width: 474px;
-//     }
-//     @include respond-to(tablet) {
-//         width: 90%;
-//         margin: 0 auto;
-//         margin-bottom: 27px;
-//         &:last-child {
-//             margin-bottom: 0;
-//         }
-//     }
-//     @include respond-to(mobile) {
-//         width: 100%;
-//         margin-bottom: 10px;
-//         &:last-child {
-//             margin-bottom: 0;
-//         }
-//     }
-//     @include respond-to(small) {
-//         width: 100%;
-//         margin-bottom: 0px;
-//         flex-direction: column;
-//     }
-// }
 .gallery__card {
     width: 272px;
     height: 343px;
@@ -287,6 +242,7 @@
 .card__button--favorite {
     border-right: 1px solid rgba(255,255,255, .3);
 }
+
 .button__favorite--icon {
     width: 19px;
     height: 18px;
@@ -299,6 +255,9 @@
     @include respond-to(mobile) {
         margin-left: 13px;
     }
+}
+[favorite] .button__favorite--icon {
+    @include background-img('../img/star-active.png');
 }
 .button__write--icon {
     width: 20px;
