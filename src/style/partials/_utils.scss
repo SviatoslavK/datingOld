@@ -79,3 +79,26 @@
     }
     
 }
+
+#btn__to-top {
+    @include square(50px);
+    @include background-img('../img/to-top.png');
+    position: fixed;
+    background-color: transparent;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 30px;
+
+    @include respond-to(tablet) {
+        bottom: 10px;
+        right: 10px;
+    }
+    @include respond-to(mobile) {
+        bottom: 10px;
+        right: 10px;
+    }
+    @include respond-to(small) {
+        bottom: 5px;
+        right: 5px;
+    }
+}
